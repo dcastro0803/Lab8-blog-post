@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pets app</title>
+
+	<link href="./css/index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<h1>Post List</h1>
+
+	<ul class="listOfPosts">
+	</ul>
+	<h1>Form to Post</h1>
+	<form>
+        <fieldset>
+          <p>
+            <label for="titlePost"> title </label>
+          </p>
+          <input id="titlePost" type="text" />
+          <p>
+            <label for="contentPost"> content </label>
+          </p>
+          <input id="contentPost" type="text" />
+          <p>
+            <label for="authorPost"> author </label>
+          </p>
+          <input id="authorPost" type="text" />
+          <p>
+            <label for="publishedDatePost"> publishedDate </label>
+          </p>
+          <input id="publishedDatePost" type="text" />
+          <!-- Button to submit -->
+          <input class="buttonHover" id="submitButtonPost" type="submit" value="Submit"/>
+        </fieldset>
+      </form>
+      <p id="errorMessagePost" hidden></p>
+      <h1>Form to Delete</h1>
+	<form>
+        <fieldset>
+          <p>
+            <label for="idDelete"> ID </label>
+          </p>
+          <input id="idDelete" type="text" />
+          
+          <!-- Button to submit -->
+          <input class="buttonHover" id="submitButtonDelete" type="submit" value="Submit"/>
+        </fieldset>
+    </form>
+    <p id="errorMessageDelete" hidden></p>
+
+    <h1>Form to Put "Update"</h1>
+	<form>
+        <fieldset>
+          <p>
+            <label for="idPut"> ID </label>
+          </p>
+          <input id="idPut" type="text" />
+          <p>
+            <label for="titlePut"> title </label>
+          </p>
+          <input id="titlePut" type="text" />
+          <p>
+            <label for="contentPut"> content </label>
+          </p>
+          <input id="contentPut" type="text" />
+          <p>
+            <label for="authorPut"> author </label>
+          </p>
+          <input id="authorPut" type="text" />
+          <p>
+            <label for="publishedDatePut"> publishedDate </label>
+          </p>
+          <input id="publishedDatePut" type="text" />
+          <!-- Button to submit -->
+          <input class="buttonHover" id="submitButtonPut" type="submit" value="Submit"/>
+        </fieldset>
+      </form>
+      <p id="errorMessagePut" hidden></p>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
